@@ -1,0 +1,97 @@
+{% extends "showcase/layout.html" %}
+{% load static %}
+
+{% block title %} 
+    Home
+{% endblock %}
+
+{% block content %}
+    <div id="hero-section">
+        <div class="left-section">
+            <h1> FIND CLOTHES THAT MATCHES YOUR STYLE</h1> 
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+            <button>Buy Now</button>
+
+            <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">International Brands</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2,000+</div>
+                    <div class="stat-label">High Quality Products</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">30,000+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="image-container">
+                <img src="{% static 'showcase/images/model.png' %}" alt="model">
+            </div>
+        </div>
+    </div>
+
+    <div id="brands-section">
+        <ul>
+            <li>VERSACE</li>
+            <li>ZARA</li>
+            <li>GUCCI</li>
+            <li>PRADA</li>
+            <li>CALVIN CLEIN</li>
+        </ul>
+    </div>
+
+    <!-- NEW ARRIVALS -->
+    <div id="new-arrivals">
+        <h1>NEW ARRIVALS</h1>
+        <div class="section-container">
+            <div class="product-grid">
+                <div class="product"><img src="{% static 'showcase/images/dress2.jpg' %}" alt="Dress 2"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress4.jpg' %}" alt="Dress 4"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress6.jpg' %}" alt="Dress 6"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress9.jpg' %}" alt="Dress 9"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOP SELLING -->
+    <div id="top-selling">
+        <h1>TOP SELLING</h1>
+        <div class="section-container">
+            <div class="product-grid">
+                <div class="product"><img src="{% static 'showcase/images/dress7.jpg' %}" alt="Dress 7"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress8.jpg' %}" alt="Dress 8"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress5.jpg' %}" alt="Dress 5"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress11.jpg' %}" alt="Dress 11"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BROWSE -->
+    <div id="browse">
+        <h1>BROWSE</h1>
+        <div class="section-container">
+            <div class="product-grid">
+                <div class="product"><img src="{% static 'showcase/images/dress9.jpg' %}" alt="Dress 9"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress10.jpg' %}" alt="Dress 10"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress5.jpg' %}" alt="Dress 5"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress1.jpg' %}" alt="Dress 1"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress4.jpg' %}" alt="Dress 4"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress8.jpg' %}" alt="Dress 8"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress3.jpg' %}" alt="Dress 3"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress7.jpg' %}" alt="Dress 7"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress11.jpg' %}" alt="Dress 11"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress12.jpg' %}" alt="Dress 12"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress2.jpg' %}" alt="Dress 2"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress13.jpg' %}" alt="Dress 13"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress14.jpg' %}" alt="Dress 14"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress15.jpg' %}" alt="Dress 15"></div>
+                <div class="product"><img src="{% static 'showcase/images/dress16.jpg' %}" alt="Dress 16"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

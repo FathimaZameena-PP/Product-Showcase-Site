@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Optional but recommended */
+}
+.topbar {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 21px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+}
+
+footer {
+  background-color: rgb(192, 205, 50);
+  height: 16px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-top: 18px;
+  border-top: 2px solid #E0E0E0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 40px;
+  align-items: center;
+  border-bottom: 2px solid #E0E0E0;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+.nav-left ul,
+.nav-right ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+  color: #666;
+}
+
+#hero-section {
+  background-color: #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  flex-wrap: wrap; /* optional if you want responsive wrapping */
+}
+
+.left-section {
+  flex: 0 1 60%;
+  max-width: 60%;
+}
+
+.right-section {
+  flex: 0 0 auto; /* Don't grow, don't shrink */
+}
+
+.right-section img {
+  width: 280px;
+  height: 390px;
+ background-color: rgb(192, 205, 50);
+ display: block;
+ object-fit: contain;
+ clip-path: inset(30px 30px 1px 35px); /* top right bottom left */
+ margin-bottom: 29px;
+}
+
+@media (max-width: 768px) {
+  #hero-section {
+  background-color: #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  flex-wrap: wrap; /* optional if you want responsive wrapping */
+ }
+
+  .left-section,.right-section {
+    flex: 1;
+    max-width: 60%; 
+  }
+}
+
+.left-section p{
+  margin-bottom: 9px;
+}
+
+.left-section h1 {
+  margin-bottom: 13px;
+}
+
+.left-section h1{
+  font: bolder;
+}
+
+.left-section button {
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  border-radius: 25px;      /* Rounded ends */
+  padding: 7px 18px;       /* Vertical and horizontal padding */
+  cursor: pointer;
+  width:100px;
+  font-size: 13px;          /* Optional: adjust font size */
+  transition: background-color 0.3s ease;  /* Smooth hover effect */
+}
+
+.left-section button:hover {
+  background-color: #333;   /* Slightly lighter on hover */
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666;
+}
+
+#brands-section ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 20px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#brands-section{
+  background-color: #000;
+  color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#brands-section ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#new-arrivals {
+  padding-top: 34px;
+  padding-bottom: 30px;
+}
+
+#new-arrivals h1{
+  color: rgb(150, 160, 40);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+
+.section-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  height: 250px;
+  background-color: #fff;
+  border: 1px solid rgb(192, 205, 50); 
+  border-radius: 8px;
+  overflow: hidden;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top; /* Ensures cropping happens from bottom */
+  border-radius: 8px;
+}
+
+
+.product:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* TOP SELLING & BROWSE SECTIONS */
+#top-selling,
+#browse {
+  padding: 30px 0;
+  background-color: #f7f7f7;
+}
+
+#top-selling h1,
+#browse h1 {
+  color: rgb(150, 160, 40);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#top-selling .section-container,
+#browse .section-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#top-selling .product-grid,
+#browse .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+#top-selling .product,
+#browse .product {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+#top-selling .product img,
+#browse .product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#top-selling .product:hover,
+#browse .product:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .about-hero {
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  #about-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .about-hero img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .about-hero {
+    background-color: #E0E0E0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 80px;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  #about-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .about-hero h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #222;
+  }
+
+  .about-hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    object-fit: cover;
+  }
+}
+
+.content{
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 44px;
+}
